@@ -409,6 +409,13 @@
           &:last-child {
             padding-bottom: 2rem;
           }
+          a span {
+            font-weight: 600;
+            color: var(--blue-color-1);
+            &:hover {
+              color: var(--blue-color-2);
+            }
+          }
         }
       }
     }

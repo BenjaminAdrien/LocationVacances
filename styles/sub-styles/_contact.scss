@@ -91,8 +91,10 @@
         }
 
         a {
-          color: rgba(23, 26, 32, 0.8);
+          // color: rgba(23, 26, 32, 0.8);
           margin-bottom: 0.5rem;
+          font-weight: 600;
+          color: var(--blue-color-1);
           &:hover {
             color: var(--blue-color-2);
           }
