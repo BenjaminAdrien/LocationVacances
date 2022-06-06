@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Locations | M. et Mme ADRIEN</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,24 +32,34 @@
         <li><a class="nav-item" href="/contact.htm">Contact</a></li>
       </nav>
     </header>
-    <main class="main-content">
-      <section class="sec1 section">
-        <img
-          class="image fade-in"
-          src="img/femmette/ile-de-noirmoutier-meubles-adrien-facade1-5907064.jpg"
-          alt=""
-        />
-        <div class="mp1 mainpage-content onInit">
-          <div class="index-title">
-            <h2 class="house-title">Femmette</h2>
-            <p class="title-p">petite maison située à l'Epine</p>
+    <main>
+      <section class="sec1 section home">
+        <div class="home-container">
+          <div class="home-panoramic">
+            <picture class="mainpage-content">
+              <img src="/img/L_Epine.jpg" alt="" />
+            </picture>
           </div>
-          <div class="accespage">
-            <div class="access-btn">
-              <a href="/femmette.html" class="link-item">
-                <span class="btn-texte">Voir la description</span>
-              </a>
+          <div class="home-items">
+            <div class="home-image">
+              <img src="/img/2c8aa31130318097de19dcdaad70e804.jpg" alt="" />
             </div>
+            <div class="home-texte-con">
+              <div class="home-texte">
+                <p>
+                  La commune de l'Epine offre aux visiteurs de belles promenades
+                  à travers les marais et les bois. Dans le marais sauvage, près
+                  des dunes de Luzéronde, seuls les bruissements des ailes des
+                  oiseaux perturbent le silence. Les sauniers tirent le sel de
+                  leurs marais durant les mois d'été. La plage de l'Epine se
+                  déroule sur plus de 3 km découvrant, à marée basse, rochers et
+                  sablières riches en coquillages. Au bout de la baie, le port
+                  de Morin abrite bateaux de pêche et de plaisance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="nxt-btn">
             <a href="#sec2">
               <div class="next-arrow">
                 <i class="fa-solid fa-angle-down"></i></div
@@ -57,40 +67,118 @@
           </div>
         </div>
       </section>
-      <section class="sec2 section" id="sec2">
-        <img
-          class="image fade-in"
-          src="img/gazelle/la_gazelle_jardin1.jpg"
-          alt=""
-        />
-        <div class="mainpage-content fade-in">
-          <div class="index-title">
-            <h2 class="house-title">La Gazelle</h2>
-            <p class="title-p"></p>
-          </div>
-          <div class="accespage">
-            <div class="access-btn">
-              <a href="/gazelle.html" class="link-item">
-                <span class="btn-texte">Voir la description</span>
+      <section class="sec2 section house-display" id="sec2">
+        <div class="house-grid-container">
+          <h2 class="house-grid-title">Nos <span>Hébergements</span></h2>
+          <div class="house-items">
+            <div
+              class="house-item"
+              onclick="location.href='/femmette.html';"
+              style="cursor: pointer"
+            >
+              <a href="/femmette.html">
+                <div class="img-wrapper">
+                  <img src="img/femmette/femmette2.jpg" alt="" />
+                </div>
               </a>
+              <div class="house-texte">
+                <div class="house-rating">
+                  <div class="key-rating">
+                    <i class="fa-solid fa-key"></i>&nbsp;<i
+                      class="fa-solid fa-key"
+                    ></i>
+                  </div>
+                  <div class="star-rating">
+                    <i class="fa-solid fa-star"></i>&nbsp;
+                    <i class="fa-solid fa-star"></i>&nbsp;
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="house-name">"Femmette"</p>
+                <p class="house-details">
+                  <i class="fa-solid fa-bed"></i>&nbsp;&nbsp;2 chambres
+                  &nbsp;&nbsp; <i class="fa-solid fa-user"></i>&nbsp;&nbsp;5
+                  personnes
+                </p>
+                <p class="house-price">
+                  à partir de <br />
+                  <span><span class="price">420€</span>&nbsp;/ semaine</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="house-item"
+              onclick="location.href='/gazelle.html';"
+              style="cursor: pointer"
+            >
+              <a href="/gazelle.html">
+                <div class="img-wrapper">
+                  <img src="img/gazelle/la_gazelle_jardin1.jpg" alt="" />
+                </div>
+              </a>
+              <div class="house-texte">
+                <div class="house-rating">
+                  <div class="key-rating">&nbsp;</div>
+                  <div class="star-rating">
+                    <i class="fa-solid fa-star"></i>&nbsp;
+                    <i class="fa-solid fa-star"></i>&nbsp;
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="house-name">"La Gazelle"</p>
+                <p class="house-details">
+                  <i class="fa-solid fa-bed"></i>&nbsp;&nbsp;2 chambres
+                  &nbsp;&nbsp; <i class="fa-solid fa-user"></i>&nbsp;&nbsp;5
+                  personnes
+                </p>
+                <p class="house-price">
+                  à partir de <br />
+                  <span><span class="price">420€</span>&nbsp;/ semaine</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="house-item"
+              onclick="location.href='/vigne.html';"
+              style="cursor: pointer"
+            >
+              <a href="/vigne.html">
+                <div class="img-wrapper">
+                  <img src="img/vigne/t2clevac2.jpg" alt="" />
+                </div>
+              </a>
+              <div class="house-texte">
+                <div class="house-rating">
+                  <div class="key-rating">
+                    <i class="fa-solid fa-key"></i>&nbsp;<i
+                      class="fa-solid fa-key"
+                    ></i>
+                  </div>
+                  <div class="star-rating">
+                    <i class="fa-solid fa-star"></i>&nbsp;
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="house-name">"La Vigne"</p>
+                <p class="house-details">
+                  <i class="fa-solid fa-bed"></i>&nbsp;&nbsp;1 chambres
+                  &nbsp;&nbsp; <i class="fa-solid fa-user"></i>&nbsp;&nbsp;2
+                  personnes
+                </p>
+                <p class="house-price">
+                  à partir de <br />
+                  <span><span class="price">370€</span>&nbsp;/ semaine</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="sec3 section">
-        <img class="image fade-in" src="img/vigne/t2clevac1.jpg" alt="" />
-        <div class="mainpage-content fade-in">
-          <div class="index-title">
-            <h2 class="house-title">La Vigne</h2>
-            <p class="title-p"></p>
-          </div>
-          <div class="accespage">
-            <div class="access-btn">
-              <a href="/vigne.html" class="link-item">
-                <span class="btn-texte">Voir la description</span>
-              </a>
-            </div>
-          </div>
+      <section class="sec3 section contact-form">
+        <div class="contact-btn-con">
+          <a href="/contact.htm"
+            ><div class="contact-btn">Nous contacter</div></a
+          >
         </div>
       </section>
     </main>

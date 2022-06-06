@@ -1,32 +1,32 @@
-const faders = document.querySelectorAll('.mainpage-content');
-const appearOptions = {
-  threshold: .55,
-  // rootMargin: '0px 0px -100px 0px'
+const panoramicImg = document.querySelector(".mainpage-content");
+const header = document.querySelector(".header");
+const disappearOptions = {
+  threshold: 0,
+  rootMargin: "-30px 0px 0px 0px",
 };
 
-
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-  entries.forEach(entry => {
+const disappearOnScroll = new IntersectionObserver(function (
+  entries,
+  disappearOnScroll
+) {
+  entries.forEach((entry) => {
+    console.log(entry.isIntersecting);
     if (!entry.isIntersecting) {
-      entry.target.classList.remove('appear');
-      ;
+      header.classList.add("appear");
     } else {
-      entry.target.classList.add('appear');
+      header.classList.remove("appear");
       // appearOnScroll.unobserve(entry.target);
     }
-  })
-}, appearOptions);
+  });
+},
+disappearOptions);
 
-faders.forEach(fader => {
-  appearOnScroll.observe(fader)
-})
-
-
+disappearOnScroll.observe(panoramicImg);
 
 // Animation on start
-const animOnStart = document.querySelector('.mp1');
-animOnStart.addEventListener('animationend', function() {
-  animOnStart.classList.remove('onInit');
-  animOnStart.classList.add('fade-in');
+// const animOnStart = document.querySelector('.mp1');
+// animOnStart.addEventListener('animationend', function() {
+//   animOnStart.classList.remove('onInit');
+//   animOnStart.classList.add('fade-in');
 
-})
+// })
