@@ -3,7 +3,7 @@
 ## https://benjaminadrien.github.io/LocationVacances/
 ![locvac_img](https://user-images.githubusercontent.com/90291370/173102642-570f9aae-f60c-4e66-90d1-495e639ebaed.png)
 
-Ce site web a été conçu en **HTML CSS** *(Sass)* et **Javascript**
+Ce site web a été conçu en **HTML**, **CSS**_(Sass)_ et **Javascript**
 
 
 ## Reste à accomplir
