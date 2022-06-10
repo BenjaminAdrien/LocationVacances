@@ -7,9 +7,9 @@ Ce site web a été conçu en **HTML CSS** *(Sass)* et **Javascript**
 
 
 ## Reste à accomplir
-  - [ ] Ajouter la section 'Tarif' entre les sections 'équipements' et 'localisation'
+  - [ ] Ajouter la section *"Tarif"* entre les sections *"équipements"* et *"localisation"*
   - [ ] Rendre le site responsive
   - [ ] Ajouter des flèches pour naviguer dans les galeries
-  - [ ] Ajouter un bouton 'back to top'
+  - [ ] Ajouter un bouton *"back to top"*
   - [ ] Ajouter un script afin d'adapter le prix en fonction de la période
 
