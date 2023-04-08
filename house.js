@@ -35,15 +35,41 @@ const appearOnScroll = new IntersectionObserver(function (
       indexItem.forEach((item) => {
         item.classList.remove("active");
       });
-      console.log(entry);
+      // console.log(entry);
       document.getElementsByClassName(itemId).item(0).classList.add("active");
     }
   });
 },
 appearOptions);
+
 sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
+
+const sectionTop = document.querySelector(".top-content");
+const backTop = document.querySelector(".backToTop");
+
+const showOptions = {
+  threshold: 0,
+  rootMargin: "-300px 0px 0px 0px",
+};
+
+const showOnScroll = new IntersectionObserver(function (
+  entries,
+  showOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      backTop.classList.add("active");
+    } else {
+      backTop.classList.remove("active");
+      // appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+showOptions);
+
+showOnScroll.observe(sectionTop);
 
 //------------------------------------------------------------------------------------
 //            footer changing color threw tarif-con

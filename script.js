@@ -10,7 +10,7 @@ const disappearOnScroll = new IntersectionObserver(function (
   disappearOnScroll
 ) {
   entries.forEach((entry) => {
-    console.log(entry.isIntersecting);
+    console.log(entry.isIntersecting, 'intersecting');
     if (!entry.isIntersecting) {
       header.classList.add("appear");
     } else {

@@ -368,6 +368,7 @@
     border-radius: 20px;
     width: 375px;
     background-color: var(--white);
+    position: relative;
     z-index: 98;
     // border: 2px solid var(--blue-color-2);
     .contact-container {
@@ -416,6 +417,28 @@
               color: var(--blue-color-2);
             }
           }
+        }
+      }
+    }
+    .backToTop {
+      position: fixed;
+      bottom: 1.5rem;
+      margin-inline: 1rem;
+      right: 0;
+      opacity: 0;
+      &.active {
+        opacity: 1
+      }
+      a {
+        display: block;
+        i {
+          background-color: var(--blue-color-1);
+          color: var(--white);
+          padding:  .3rem .8rem;
+          border-radius: 10px;
+          justify-self: center
+          
+          
         }
       }
     }

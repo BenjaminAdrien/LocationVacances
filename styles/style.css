@@ -660,6 +660,7 @@ body {
   border-radius: 20px;
   width: 375px;
   background-color: var(--white);
+  position: relative;
   z-index: 98;
 }
 .house-container .contact-col .contact-container {
@@ -707,6 +708,26 @@ body {
 }
 .house-container .contact-col .contact-container .contacts .contact a span:hover {
   color: var(--blue-color-2);
+}
+.house-container .contact-col .backToTop {
+  position: fixed;
+  bottom: 1.5rem;
+  margin-inline: 1rem;
+  right: 0;
+  opacity: 0;
+}
+.house-container .contact-col .backToTop.active {
+  opacity: 1;
+}
+.house-container .contact-col .backToTop a {
+  display: block;
+}
+.house-container .contact-col .backToTop a i {
+  background-color: var(--blue-color-1);
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  justify-self: center;
 }
 
 footer {
