@@ -328,6 +328,7 @@ body {
   --blue-color-3: rgb(211, 241, 243);
   --grey-color-1: #ccc;
   --grey-color-2: #b9b7b7;
+  --marge: calc((100vw - min(100vw, 1350px))/2) ;
 }
 
 .header-house {
@@ -711,9 +712,9 @@ body {
 }
 .house-container .contact-col .backToTop {
   position: fixed;
-  bottom: 4.2rem;
   margin-inline: 1rem;
-  right: 0;
+  bottom: 4.2rem;
+  right: var(--marge);
   opacity: 0;
 }
 .house-container .contact-col .backToTop.active {
