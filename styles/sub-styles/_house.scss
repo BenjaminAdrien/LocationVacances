@@ -96,7 +96,7 @@
           flex: 1;
 
           a {
-            padding: 1.8rem 1.2rem;
+            padding: 1.5rem 1.2rem;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -368,6 +368,7 @@
     border-radius: 20px;
     width: 375px;
     background-color: var(--white);
+    position: relative;
     z-index: 98;
     // border: 2px solid var(--blue-color-2);
     .contact-container {
@@ -416,6 +417,28 @@
               color: var(--blue-color-2);
             }
           }
+        }
+      }
+    }
+    .backToTop {
+      position: fixed;
+      bottom: 4.2rem;
+      margin-inline: 1rem;
+      right: 0;
+      opacity: 0;
+      &.active {
+        opacity: 1
+      }
+      a {
+        display: block;
+        i {
+          background-color: var(--blue-color-2);
+          color: var(--white);
+          padding:  .3rem .8rem;
+          border-radius: 10px;
+          justify-self: center
+          
+          
         }
       }
     }
