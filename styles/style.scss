@@ -34,6 +34,7 @@ body {
   background-color: var(--blue-color-3);
 }
 
+/* navbar*/
 .header {
   width: 100%;
   position: fixed;
@@ -94,12 +95,14 @@ body {
   }
 }
 
+
+/*front page*/
 .home {
   height: 100vh;
-  margin-bottom: 60px;
   .home-container {
     .home-panoramic {
-      padding: 16rem 0;
+      // padding: 16rem 0;
+      height: 55vh;
       position: relative;
       picture {
         position: absolute;
@@ -119,16 +122,18 @@ body {
       max-width: 1350px;
       margin: 0 auto;
       padding-inline: 1.25rem;
+      display: flex;
+      justify-content: end;
       .home-image {
         position: absolute;
-        // left: 10%;
-        top: -260px;
+        left: 4rem;
+        top: -22vh;
         background-color: white;
         padding: 1rem;
         border-radius: 20px;
         box-shadow: 0 4px 10px 0 rgba(32, 42, 39, 0.09);
         img {
-          height: 400px;
+          height: 45vh;
           aspect-ratio: 0.7;
           object-fit: contain;
         }
@@ -136,15 +141,17 @@ body {
       .home-texte-con {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         margin-top: 2rem;
+        width: 60%;
         // padding-inline: 5rem;
         .home-text-title {
-          max-width: 50%;
-          flex-basis: 50%;
+          max-width: 100%;
+          flex-basis: 100%;
           h2 {
-            text-align: center;
+            // text-align: start;
             margin-bottom: 1rem;
+            margin-right: 1rem;
             font-size: 1.55rem;
             font-weight: 800;
             span {
@@ -153,8 +160,8 @@ body {
           }
         }
         .home-texte {
-          max-width: 50%;
-          flex-basis: 50%;
+          width: 100%;
+          flex-basis: 100%;
           p {
             // padding-inline: 2rem;
             line-height: 1.6rem;
@@ -164,7 +171,7 @@ body {
     }
     .home-bottom-text {
       position: absolute;
-      bottom: 60px;
+      bottom: 2.7rem;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
@@ -232,7 +239,7 @@ body {
   // padding-top: 60px;
   // height: 100vh;
   padding-bottom: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   .house-grid-container {
     max-width: 1350px;
     margin: 0 auto;
@@ -322,7 +329,7 @@ body {
 
 .contact-form {
   .contact-btn-con {
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
