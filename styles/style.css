@@ -552,6 +552,7 @@ body {
   font-weight: 500;
 }
 .house-container .house-items .house-item-description .text-description .text-des-con .caution-con:last-child {
+  padding: -1rem;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   flex-direction: column;
@@ -561,20 +562,30 @@ body {
 }
 .house-container .house-items .house-item-description .text-description .text-des-con .caution-con:last-child .prices-con {
   display: flex;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  justify-content: center;
-  padding: 1.2rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  justify-content: space-around;
+  padding: 1.5rem 1rem;
   box-shadow: 0 0px 10px 0 rgba(32, 42, 39, 0.3);
   border-radius: 16px;
 }
 .house-container .house-items .house-item-description .text-description .text-des-con .caution-con:last-child .prices-con li {
-  flex: auto;
-  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 0.5rem;
+}
+.house-container .house-items .house-item-description .text-description .text-des-con .caution-con:last-child .prices-con li > span:first-child {
+  font-size: 15px;
+}
+.house-container .house-items .house-item-description .text-description .text-des-con .caution-con:last-child .prices-con li p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.house-container .house-items .house-item-description .text-description .text-des-con .caution-con:last-child .prices-con li p span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
 }
 .house-container .house-items .photo-carousel {
   padding-top: 6rem;
